@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separar Letras e Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Abas de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#" id="tab1">Separar Letras</a></li>
+            <li><a href="#" id="tab2">Jogo da Forca</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo da aba Separar Letras -->
+    <div id="separarLetrasSection">
+        <div class="container">
+            <h1>Digite uma Palavra</h1>
+            <input type="text" id="inputWord" placeholder="Digite uma palavra">
+            <button id="separarBtn">SEPARAR</button>
+            <div id="letters" class="letter-container"></div>
+        </div>
+    </div>
+
+    <!-- Conteúdo da aba Jogo da Forca -->
+    <div id="forcaSection" class="hidden">
+        <div class="container">
+            <h1>Jogo da Forca</h1>
+            <button id="novaPalavraBtn">Nova Palavra</button>
+            <div id="palavraAdivinhada" class="letter-container"></div>
+            <div id="botoesLetras" class="letter-container"></div>
+            <canvas id="forcaCanvas" width="200" height="200"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
